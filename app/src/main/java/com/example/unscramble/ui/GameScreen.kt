@@ -54,7 +54,9 @@ import com.example.unscramble.R
 import com.example.unscramble.ui.theme.UnscrambleTheme
 
 @Composable
-fun GameScreen() {
+fun GameScreen(
+    gameViewModel: GameViewModel = viewModel()
+) {
     val mediumPadding = dimensionResource(R.dimen.padding_medium)
 
     Column(
