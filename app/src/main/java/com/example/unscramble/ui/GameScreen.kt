@@ -79,7 +79,7 @@ fun GameScreen(
             style = typography.titleLarge,
         )
         GameLayout(
-            currentScrambledWord = gameUi.currentScrambledWord,
+            currentScrambledWord = gameUiState.currentScrambledWord,
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentHeight()
@@ -158,7 +158,7 @@ fun GameLayout(
                 color = colorScheme.onPrimary
             )
             Text(
-                text = "scrambleun",
+                text = currentScrambledWord,
                 style = typography.displayMedium
             )
             Text(
